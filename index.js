@@ -29,6 +29,8 @@ app.post("/api/admission", async (req, res) => {
     }
 });
 
+
+
 app.get("/api/admission", async (req, res) => {
     try {
         const AdmissionInquiries = await Admission.find();
