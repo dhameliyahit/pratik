@@ -13,6 +13,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors());
 
+app.get("/",(req,res)=>{
+    res.send("DONE!")
+})
+
 //addmission inquiry Api
 app.post("/api/admission", async (req, res) => {
     try {
